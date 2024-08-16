@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com JS</title>
+    
+</head>
+<body>
+    <h1>Oia o looping</h1>
+    <div class="numeros">
+        <h2>1,2,3,4</h2>
+    </div>
+    
+    <script> 
+        let num = 1;
+
+    setInterval(function() {
+    document.getElementById('numeros' + num).checked = true;
+    num ++;
+
+    if( num >3){
+        num =1;
+    }
+
+    
+    }, 2000);
+    </script>
+    
+</body>
+</html>
